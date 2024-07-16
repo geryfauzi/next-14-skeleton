@@ -1,0 +1,17 @@
+.pena-tooltip {
+  @apply stroke-gray-400 hover:stroke-gray-600 hover:transition-colors hover:ease-in-out hover:delay-100 hover:duration-300 hover:bg-primary-100;
+}
+.tooltip-white {
+  --tooltip-color: #f9f9f8;
+  --tooltip-text-color: #000000;
+}
+
+.tooltip:before {
+  --tooltip-color: #f9f9f8;
+  @apply bg-gray-700 text-gray-25 text-xs;
+}
+
+.tooltip {
+  --tooltip-tail: 4px;
+  --tooltip-color: hsl(219 14% 28%) !important;
+}

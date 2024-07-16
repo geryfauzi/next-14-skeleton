@@ -1,0 +1,25 @@
+@import "./settings/_fonts";
+@import "./settings/_variable";
+@import "./components/_reactquill";
+@import "./components/_modal";
+@import "./components/_tooltip";
+@import "./components/_select";
+@import "./components/_tab";
+@import "./components/_table";
+@import "./components/_calendar";
+@import "./components/_date.scss";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @import "./components/_scrollbar";
+  @import "./components/_loading";
+  @import "./components/_rating";
+}
+
+body {
+  font-family: $font;
+}

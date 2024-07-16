@@ -1,0 +1,45 @@
+.pena-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.pena-tab-bordered {
+  border-color: #eaecf0;
+  --tw-border-opacity: 0;
+  border-style: solid;
+  border-bottom-width: calc(var(--tab-border, 1px) + 1px);
+}
+
+.pena-tab:hover {
+  --tw-text-opacity: 1;
+}
+.pena-tab {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 4rem;
+  line-height: 2;
+  --tab-padding: 1rem;
+  --tw-text-opacity: 0.5;
+  --tab-color: #667085;
+  --tab-bg: hsla(var(--b1) / var(--tw-bg-opacity, 1));
+  --tab-border-color: hsla(var(--b3) / var(--tw-bg-opacity, 1));
+  color: var(--tab-color);
+  padding-left: var(--tab-padding, 1rem);
+  padding-right: var(--tab-padding, 1rem);
+  @apply font-semibold;
+}
+.pena-tab.pena-tab-active {
+  border-color: #e04f16;
+  color: #e04f16;
+  --tw-border-opacity: 1;
+  --tw-text-opacity: 1;
+  border-bottom-width: calc(var(--tab-border, 2px) + 2px);
+}

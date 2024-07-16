@@ -1,0 +1,43 @@
+.Tables {
+  @apply border border-gray-200 shadow-md rounded-xl max-h-96 md:max-h-full lg:max-h-full overflow-x-hidden;
+}
+
+.Tables-Not-Rounded {
+  @apply border border-gray-200 max-h-96 md:max-h-full lg:max-h-full overflow-auto overflow-x-hidden;
+}
+
+table {
+  @apply w-full overflow-auto;
+}
+
+thead {
+  @apply bg-gray-25 text-justify text-gray-600 normal-case;
+}
+
+th {
+  @apply p-5 w-fit;
+}
+
+tbody {
+  @apply w-full;
+}
+
+tr {
+  border-top: 1px;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  @apply border-gray-25;
+}
+
+td {
+  @apply p-5;
+}
+
+tbody > tr:nth-child(2n-1) {
+  @apply bg-gray-50;
+}
+
+.pagination {
+  @apply border-t border-t-gray-200 p-6 w-full;
+}

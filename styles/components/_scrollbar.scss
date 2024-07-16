@@ -1,0 +1,22 @@
+@import "../settings/variable";
+
+* {
+  /* width */
+  ::-webkit-scrollbar {
+    @apply h-2 w-2;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-gray-200 opacity-25;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-300;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  @apply h-0 w-0;
+}

@@ -1,0 +1,63 @@
+.rating {
+  position: relative;
+  display: inline-flex;
+}
+
+.rating input {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #ffae00 !important;
+}
+
+.rating-xs input {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.rating-md input {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.rating-sm input {
+  height: 1rem;
+  width: 1rem;
+}
+
+.rating-lg input {
+  height: 2rem;
+  width: 2rem;
+}
+
+.rating-xl input {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.rating :where(input) {
+  animation: rating-pop var(--animation-input, 0.25s) ease-out;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: hsl(var(--bc) / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+}
+.rating .rating-hidden {
+  width: 0.5rem;
+  background-color: transparent;
+}
+.rating input:checked ~ input {
+  background-color: #e0e0e0;
+}
+.rating input:focus-visible {
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-0.125em);
+}
+.rating input:active:focus {
+  animation: none;
+  transform: translateY(-0.125em);
+}
+.rating-half :where(input:not(.rating-hidden)) {
+  width: 0.75rem;
+}

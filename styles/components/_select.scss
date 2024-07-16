@@ -1,0 +1,26 @@
+.reactSelectToolTip {
+  @apply text-sm;
+
+  [class$="-control"] {
+    @apply bg-gray-25 shadow-sm border-none border-0 h-11 rounded-xl;
+  }
+
+  [class$="-indicatorSeparator"] {
+    @apply bg-transparent;
+  }
+}
+
+.reactSelectDropdown {
+  @apply text-sm;
+
+  [class$="-control"] {
+    @apply bg-white shadow-md border h-12 rounded-lg;
+  }
+  [class$="-placeholder"] {
+    @apply text-black;
+  }
+
+  [class$="-indicatorSeparator"] {
+    @apply bg-transparent;
+  }
+}
