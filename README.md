@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Next.js 14 Skeleton Project
 
-## Getting Started
+This project serves as a skeleton for building applications with Next.js 14, using the App Router, Tailwind CSS, DaisyUI, React Haiku, and Zustand for state management. It follows Atomic Design principles for component organization.
+Table of Contents
 
-First, run the development server:
+    Features
+    Getting Started
+    Project Structure
+    Usage
+    Contributing
+    License
 
-```bash
-npm run dev
+Features
+
+    Next.js 14: Latest version of Next.js with the App Router for improved routing.
+    Tailwind CSS: Utility-first CSS framework for rapid UI development.
+    DaisyUI: Tailwind CSS component library for beautiful and responsive design.
+    React Haiku: Declarative and animated UI elements.
+    Zustand: Small, fast, and scalable state management.
+    Atomic Design: Methodology for designing and organizing components.
+
+Getting Started
+Prerequisites
+
+Ensure you have the following installed:
+
+    Node.js (>= 20.x)
+    npm or yarn
+
+Installation
+
+    Clone the repository:
+
+    bash
+
+git clone https://github.com/geryfauzi/next-14-skeleton.git
+cd nextjs14-skeleton
+
+Install dependencies:
+
+bash
+
+npm install
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+yarn install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+bash
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    npm run dev
+    # or
+    yarn dev
 
-## Learn More
+    Open http://localhost:3000 with your browser to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+Usage
+Adding Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Components are organized according to Atomic Design principles:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    Atoms: Basic building blocks (e.g., buttons, inputs).
+    Molecules: Groups of atoms (e.g., form fields, cards).
+    Organisms: Groups of molecules (e.g., navigation bars, footers).
+    Templates: Page-level components that compose organisms.
 
-## Deploy on Vercel
+State Management
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Zustand is used for state management. Create your stores in the src/store directory.
+Styling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Tailwind CSS and DaisyUI are used for styling. Customize the tailwind.config.js file as needed.
+Contributing
+
+Contributions are welcome! Please follow these steps:
+
+    Fork the repository.
+    Create a new branch (git checkout -b feature/your-feature).
+    Commit your changes (git commit -m 'Add some feature').
+    Push to the branch (git push origin feature/your-feature).
+    Open a pull request.
+
+License
+
+This project is licensed under the MIT License.
